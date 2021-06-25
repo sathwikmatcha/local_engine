@@ -1,7 +1,7 @@
 const fs=require('fs');
 const path=require('path');
 
-let testFolder= 'C:\\Users\\HP\\Desktop';
+let testFolder= 'E:\\';
 let mainArray=[];
 
 console.log(1);
@@ -36,7 +36,7 @@ async function main(testFolder){
         });
         var json=JSON.stringify(obj);
     
-        fs.writeFile('base.json',json,'utf8',(err)=>{
+        fs.writeFile('drive-e.json',json,'utf8',(err)=>{
             if(err){
                 return;
             };
