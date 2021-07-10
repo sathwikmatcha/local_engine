@@ -1,14 +1,9 @@
 const {app, BrowserWindow}=require('electron');
 
 function createApp(){
-    const win=new BrowserWindow(
-        {
-            width:800,
-            height:450,
-        }
-    );
+    const win=new BrowserWindow();
     
-    win.loadFile('main.html');
+    win.loadFile('setup_ui.html');
 }
 
 app.whenReady().then(()=>{

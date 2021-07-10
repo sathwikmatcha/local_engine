@@ -1,7 +1,7 @@
 const fs=require('fs');
 const path=require('path');
 
-let testFolder= 'C:\\Users\\HP\\Desktop';
+let testFolder= 'C:\\';
 let mainArray=[];
 
 console.log(1);
@@ -15,8 +15,12 @@ var obj={
 
 async function main(testFolder){
     var initial_date=new Date().getTime();
-
+    
     fs.readdir(testFolder,(err,files)=>{
+        if(err){
+            console.log(err.message)
+            return;
+        }
         files.forEach(file=>{
             const absolutePath = path.resolve(testFolder,file)
             console.log(file, path.parse(absolutePath));

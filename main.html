@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main_web.js"></script>
 </head>
 <body>
-    <input type="text" list="operation">
+    <input type="text" list="operation" id="inp-op">
     <datalist id="operation">
-        <option value="SEARCH" selected>Search</option>
-        <option value="CREATE">Create</option>
-        <option value="DELETE">Delete</option>
-        <option value="RENAME">Rename</option>
+        <option value="Search" selected>Search</option>
+        <option value="Create">Create</option>
+        <option value="Delete">Delete</option>
+        <option value="Rename">Rename</option>
+    </datalist>
+    <input type="text" id="inp-inp">
+    <input type="text" list="extension" id="inp-ext">
+    <datalist id="extension">
+        <option value=" " selected></option>
+        <option value="folder"></option>
+        <option value=".pdf"></option>
+        <option value=".txt"></option>
+        <option value=".mp4"></option>
+        <option value=".docx"></option>
+        <option value=".pptx"></option>
+        <option value=".py"></option>
+        <option value=".exe"></option>
     </datalist>
 </body>
 </html>
